@@ -4,7 +4,7 @@ async function indexGet(req, res) {
 
 async function indexPost(req, res) {
   if (req.body.inventory) {
-    res.send("inventory");
+    res.redirect("/inventory");
   } else if (req.body.edit) {
     res.send("edit");
   } else {
